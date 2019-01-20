@@ -1,0 +1,59 @@
+@import '../../styles/variables.scss';
+
+ul {
+  display: flex;
+  flex-direction: column;
+}
+
+li {
+  margin-bottom: 15px;
+}
+
+li:last-child {
+  margin-bottom: 0;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+input[type="checkbox"] + label {
+  font-family: 'ralewayregular';
+  font-size: 15px;
+  color: $dark-gray-color;
+  cursor: pointer;
+}
+
+input[type="checkbox"] + label::before {
+  content: "";
+  display: inline-block;
+  height: 18px;
+  width: 18px;
+  margin: 0 10px -3px 0;
+  background-image: url(/src/assets/imgs/checkbox.png);
+  background-repeat: no-repeat;
+}
+
+input[type="checkbox"]:checked + label::before {
+  content: "";
+  display: inline-block;
+  height: 18px;
+  width: 18px;
+  margin: 0 10px -3px 0;
+  background-image: url(/src/assets/imgs/checked.png);
+  background-repeat: no-repeat;
+}
+
+label {
+  span {
+    font-size: 15px;
+    font-family: Open-Sans, sans-serif;
+    color: $light-gray-color;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 586px) {
+  ul {
+    margin-left: 75px;
+  }
+}

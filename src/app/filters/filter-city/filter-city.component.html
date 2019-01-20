@@ -1,0 +1,7 @@
+<h3>City</h3>
+<select (change)="selectedCity($event)" [(ngModel)]="city">
+  <option 
+    *ngFor="let city of cities" 
+    value={{city.name}}
+  >{{city.name}}</option>
+</select>

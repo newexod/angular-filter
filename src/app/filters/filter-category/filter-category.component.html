@@ -1,0 +1,12 @@
+<h3>Categories</h3>
+<ul>
+  <li *ngFor="let category of categories">
+    <input 
+      id={{category.id}} 
+      type="checkbox" 
+      (change)="onToggle(category)"
+      [(ngModel)]="category.isChecked"
+    >
+    <label for={{category.id}}>{{category.name}} <span>({{getLengthData(category.name)}})</span></label>
+  </li>
+</ul>

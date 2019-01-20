@@ -1,0 +1,13 @@
+<div class="filters">
+  <app-filter-city
+    (onCityEmitter)="selectedCity = $event"
+  ></app-filter-city>
+  <app-filter-category
+    (onCategoriesEmitter)="checkedCategories = $event"
+  ></app-filter-category>
+  <app-filter-price
+    [city]="selectedCity"
+    [categories]="checkedCategories"
+    (onFilterEmitter)="filter($event)"
+  ></app-filter-price>
+</div>

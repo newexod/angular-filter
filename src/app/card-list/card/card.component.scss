@@ -1,0 +1,81 @@
+@import '../../styles/variables.scss';
+
+.card {
+  position: relative;
+  &-img {
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 268px;
+      height: 180px;
+      box-shadow: inset 0px -80px 80px -15px rgba(20 ,21 ,25 ,0.502);
+    }
+    img {
+      display: block;
+      width: 268px;
+      height: 180px;
+    }
+  }
+  &-city,
+  &-category,
+  &-name,
+  &-price {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  &-city,
+  &-category {
+    font-family: 'ralewaymedium';
+    font-size: 13px;
+    line-height: 22px;
+  }
+  &-name,
+  &-price {
+    font-family: 'montserratregular';
+    font-size: 16px;
+    line-height: 22px;
+  }
+  &-city {
+    content: '';
+    position: absolute;
+    top: 147px;
+    color: $white-color;
+  }
+  &-name {
+    padding-top: 19px;
+    padding-bottom: 25px;
+    color: $dark-gray-color2;
+  }
+  &-category {
+    color: $light-gray-color;
+  }
+  &-price {
+    color: #282d3b;
+  }
+  &-about {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+  }
+  &:hover {
+    box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 270px;
+      height: 180px;
+      background-color: rgb(28, 184, 255);
+      opacity: 0.702;
+    }
+    .card-img {
+      &::after {
+        box-shadow: none;
+      }
+    }
+  }
+}

@@ -1,0 +1,68 @@
+@import '../../styles/variables.scss';
+
+h3 {
+  margin-bottom: 0;
+}
+
+.ng5-slider {
+  width: 240px;
+}
+
+button {
+  position: relative;
+  top: 8px;
+  left: 135px;
+  font-family: 'montserratregular';
+  font-size: 14px;
+  padding: 10px 28px;
+  text-transform: uppercase;
+  color: $white-color;
+  background-color: $blue-color;
+  border: none;
+  cursor: pointer;
+}
+
+::ng-deep {
+  .ng5-slider {
+    .ng5-slider-bubble.ng5-slider-limit {
+      display: none;
+    }
+    .ng5-slider-pointer.ng5-slider-pointer {
+      width: 16px;
+      height: 16px;
+      top: -6px;
+      &::after {
+        width: 12px;
+        height: 12px;
+        top: 2px;
+        left: 2px;
+        border-radius: 50%;
+      }
+    }
+    .ng5-slider-span.ng5-slider-bubble {
+      top: 35px;
+      font-family: 'montserratregular';
+      font-size: 16px;
+      color: $dark-gray-color2;
+      &.ng5-slider-model-value {
+        left: 0 !important;
+      }
+      &.ng5-slider-model-high {
+        left: 65px !important;
+      }
+      &.ng5-slider-combined {
+        left: 0 !important;
+      }
+    }
+  }
+}
+
+
+@media (min-width: 320px) and (max-width: 586px) {
+  .ng5-slider {
+    margin-left: 15px;
+  }
+  button {
+    left: 150px;
+  }
+}

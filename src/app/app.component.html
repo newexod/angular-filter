@@ -1,0 +1,6 @@
+<div class="filter">
+  <app-filters (onFilterEmitter)="data = $event"></app-filters>
+  <app-card-list
+    [data]="data"
+  ></app-card-list>
+</div>

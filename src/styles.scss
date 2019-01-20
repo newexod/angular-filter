@@ -1,0 +1,39 @@
+/* You can add global styles to this file, and also import other style files */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+h3 {
+  margin-top: 55px;
+  margin-bottom: 30px;
+  font-family: 'montserratbold';
+  font-size: 18px;
+  color: #33363e;
+  text-transform: uppercase;
+}
+
+@media (min-width: 887px) and (max-width: 1186px) {
+  body {
+    max-width: 870px;
+  }
+}
+
+@media (min-width: 587px) and (max-width: 886px) {
+  body {
+    max-width: 570px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 586px) {
+  h3 {
+    text-align: center;
+  }
+  body {
+    max-width: 270px;
+  }
+}

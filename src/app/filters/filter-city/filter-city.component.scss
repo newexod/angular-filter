@@ -1,0 +1,15 @@
+@import '../../styles/variables.scss';
+
+select {
+  width: 240px;
+  padding: 10px 15px;
+  font-family: 'ralewayregular';
+  font-size: 15px;
+  color: $dark-gray-color;
+}
+
+@media (min-width: 320px) and (max-width: 586px) {
+  select {
+    margin-left: 15px;
+  }
+}

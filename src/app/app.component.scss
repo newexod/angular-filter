@@ -1,0 +1,9 @@
+.filter {
+  display: flex;
+}
+
+@media (min-width: 320px) and (max-width: 586px) {
+  .filter {
+    display: block;
+  }
+}

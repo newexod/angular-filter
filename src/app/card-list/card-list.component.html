@@ -1,0 +1,9 @@
+<ul class="cards">
+  <li 
+    *ngFor="let card of cards | cardFilter:data"
+  >
+    <app-card
+      [cardItem]="card"
+    ></app-card>
+  </li>
+</ul>
